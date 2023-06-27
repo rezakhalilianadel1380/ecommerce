@@ -2,6 +2,10 @@
 django web application 
 
 
+# technology
+- backend:  **django**
+- db: **postgres**
+- frontend : **html ,css ,js**
 
 # Install  
 create virtualenv with this command 
