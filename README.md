@@ -18,11 +18,11 @@ pip install -r  requirements.txt
 ```
 config  the database and run 
 ```
-python manages.py migrate
+python manage.py migrate
 ```
 
 # Usage 
 run this command 
 ```
-python mangage.py runserver 
+python manage.py runserver 
 ```
