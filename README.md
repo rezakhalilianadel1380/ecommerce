@@ -26,3 +26,7 @@ run this command
 ```
 python mangage.py runserver 
 ```
+
+
+## TO DO
+- [ ] create database schema 
