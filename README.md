@@ -29,4 +29,5 @@ python manage.py runserver
 
 
 ## TO DO
-- [ ] create database schema 
+- [x] create database schema 
+- [ ] test drf for app 
