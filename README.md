@@ -28,6 +28,3 @@ python manage.py runserver
 ```
 
 
-## TO DO
-- [x] create database schema 
-- [ ] test drf for app 
