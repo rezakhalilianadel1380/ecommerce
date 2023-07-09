@@ -85,11 +85,11 @@ DATABASES = {
     #}
     'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'ecommerse',
-       'USER': 'postgres',
-       'PASSWORD': '134425',
-       'HOST': 'localhost',
-       'PORT': '5432',
+       'NAME': os.getenv('NAME'),
+       'USER': os.getenv('USER'),
+       'PASSWORD': os.getenv('PASSWORD'),
+       'HOST': os.getenv('HOST'),
+       'PORT': os.getenv('PORT'),
    }
 }
 
@@ -131,6 +131,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS=[
+    os.path.join(BASE_DIR,'assets'),
+]
+STATIC_ROOT=os.path.join(BASE_DIR,'static_cdn','static_roots')
+MEDIA_URL = '/media/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'static_cdn','media_roots')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
